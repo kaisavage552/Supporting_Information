@@ -1,0 +1,10 @@
+# Python dependencies for analysis notebooks and scripts
+# LAMMPS/2Aug2023_update2-foss-2023a-kokkos with USER-MEAMC is required separately for simulation inputs
+
+ase>=3.22
+phonopy>=2.20
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+scipy>=1.10
+mace-torch>=0.3

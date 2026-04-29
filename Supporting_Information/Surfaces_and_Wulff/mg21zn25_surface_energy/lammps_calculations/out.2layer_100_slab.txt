@@ -1,0 +1,64 @@
+LAMMPS (2 Aug 2023 - Update 2)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (26.120978 8.787871 61.242016)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  552 atoms
+  reading velocities ...
+  552 velocities
+  read_data CPU = 0.062 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 3 16
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 9.929 | 9.929 | 9.929 Mbytes
+   Step         PotEng         TotEng         Press          Volume    
+         0  -705.08616     -705.08616     -12785.921      14057.969    
+Loop time of 6.7e-07 on 1 procs for 0 steps with 552 atoms
+
+149.3% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 6.7e-07    |            |       |100.00
+
+Nlocal:            552 ave         552 max         552 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           1889 ave        1889 max        1889 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          30074 ave       30074 max       30074 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:        60148 ave       60148 max       60148 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 60148
+Ave neighs/atom = 108.96377
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00

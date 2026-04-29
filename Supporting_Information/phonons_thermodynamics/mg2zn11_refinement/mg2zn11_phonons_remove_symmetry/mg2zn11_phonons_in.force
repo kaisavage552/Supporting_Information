@@ -1,0 +1,19 @@
+# ---------------------------
+# Static force evaluation for phonopy
+# ---------------------------
+units metal
+atom_style atomic
+ 
+boundary p p p
+    read_data  supercell-001
+    pair_style      meam
+pair_coeff      * * ./library.meam Zn Mg ./ZnMg.meam Mg Zn
+ 
+labelmap atom 1 Mg 2 Zn
+variable atom1 equal label2type(atom,Mg)
+variable atom2 equal label2type(atom,Zn) 
+ 
+    dump phonopy all custom 1 forces.dump id type x y z fx fy fz
+    dump_modify phonopy format line "%d %d %15.8f %15.8f %15.8f %15.8f %15.8f %15.8f"
+    run 0
+

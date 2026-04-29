@@ -1,0 +1,17 @@
+# Mg4Zn7 slab relaxation - fixed lattice, atoms free to move
+
+units metal
+atom_style atomic
+boundary p p f
+
+read_data slabs/mg2zn11_100_6layers_reconstructed_ase.data
+
+pair_style meam
+pair_coeff * * library.meam Mg Zn ZnMg.meam Zn Mg
+
+# Output thermodynamic info every 10 steps
+thermo 10
+thermo_style custom step pe etotal fmax press vol
+
+fix 1 all box/relax x 0.0 y 0.0 couple none
+minimize 1e-8 1e-8 10000 100000

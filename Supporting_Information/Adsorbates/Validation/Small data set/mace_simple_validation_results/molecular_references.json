@@ -1,0 +1,30 @@
+{
+  "O2": {
+    "E_initial": -9.87809201259332,
+    "E_final": -9.896587579017208,
+    "E_total": -9.896587579017208,
+    "E_per_atom": -4.948293789508604,
+    "bond_length_initial": 1.21,
+    "bond_length_final": 1.2322747402857637,
+    "bond_length_change": 0.022274740285763706,
+    "energy_change": -0.018495566423887055,
+    "max_force": 0.00014178034688513974,
+    "opt_steps": 4,
+    "cohesive_energy": 9.896587579017208,
+    "experimental_bond_energy": 5.12
+  },
+  "H2": {
+    "E_initial": -6.764107123544263,
+    "E_final": -6.766273493453458,
+    "E_total": -6.766273493453458,
+    "E_per_atom": -3.383136746726729,
+    "bond_length_initial": 0.74,
+    "bond_length_final": 0.7512115499997716,
+    "bond_length_change": 0.011211549999771586,
+    "energy_change": -0.002166369909194721,
+    "max_force": 0.0011906055404276598,
+    "opt_steps": 1,
+    "cohesive_energy": 6.766273493453458,
+    "experimental_bond_energy": 4.52
+  }
+}

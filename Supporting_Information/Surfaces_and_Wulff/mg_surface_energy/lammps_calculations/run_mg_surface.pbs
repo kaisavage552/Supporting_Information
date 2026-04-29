@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=1:mem=4gb
+#PBS -l walltime=01:00:00
+#PBS -q v1_small24a
+#PBS -N Mg_surface
+#PBS -j oe
+
+module load tools/prod
+module load LAMMPS/2Aug2023_update2-foss-2023a-kokkos
+
+cd $PBS_O_WORKDIR/lammps_calculations
+
+for infile in in.Mg_0001_8L in.Mg_1010_8L in.Mg_1011_8L in.Mg_1012_15L in.Mg_1120_8L; do
+    name=$(echo $infile | sed 's/in\.//')
+    echo "=== Running $name ==="
+    mpirun -np 1 lmp -in $infile -log logs/${name}.log
+    echo "=== Finished $name ==="
+done
+
+echo "All done"

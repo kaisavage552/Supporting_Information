@@ -1,0 +1,20 @@
+# Bulk MgZn2 single point energy
+
+units metal
+atom_style atomic
+boundary p p p
+
+read_data bulk_structure/mg4zn7_relaxed.data
+
+pair_style meam
+pair_coeff * * library.meam Mg Zn ZnMg.meam Zn Mg
+
+fix 1 all box/relax iso 0.0 vmax 0.001
+minimize 1.0e-8 1.0e-10 10000 100000
+unfix 1
+
+thermo 1
+thermo_style custom step pe etotal press vol
+
+run 0
+

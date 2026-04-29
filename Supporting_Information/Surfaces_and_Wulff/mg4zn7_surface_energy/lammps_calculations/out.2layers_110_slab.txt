@@ -1,0 +1,62 @@
+LAMMPS (2 Aug 2023 - Update 2)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.888543 14.122763 26.346088) with tilt (3.065691 0 0)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  220 atoms
+  read_data CPU = 0.060 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 8 4 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 8.949 | 8.949 | 8.949 Mbytes
+   Step         PotEng         TotEng         Press          Volume    
+         0  -249.65418     -249.65418     -7877.2016      10004.677    
+Loop time of 7.38e-07 on 1 procs for 0 steps with 220 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 7.38e-07   |            |       |100.00
+
+Nlocal:            220 ave         220 max         220 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            546 ave         546 max         546 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           9310 ave        9310 max        9310 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:        18620 ave       18620 max       18620 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 18620
+Ave neighs/atom = 84.636364
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00

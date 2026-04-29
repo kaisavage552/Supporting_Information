@@ -1,0 +1,65 @@
+LAMMPS (2 Aug 2023 - Update 2)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (38.954501 19.08373 37.336259) with tilt (-15.5818 0 0)
+WARNING: Triclinic box skew is large. LAMMPS will run inefficiently. (src/domain.cpp:220)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  936 atoms
+  reading velocities ...
+  936 velocities
+  read_data CPU = 0.021 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 14 5 10
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 10.66 | 10.66 | 10.66 Mbytes
+   Step         PotEng         TotEng         Press          Volume    
+         0  -994.69608     -994.69608     -9149.4974      27755.67     
+Loop time of 8.03e-07 on 1 procs for 0 steps with 936 atoms
+
+124.5% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 8.03e-07   |            |       |100.00
+
+Nlocal:            936 ave         936 max         936 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           1660 ave        1660 max        1660 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          51968 ave       51968 max       51968 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       103936 ave      103936 max      103936 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 103936
+Ave neighs/atom = 111.04274
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00

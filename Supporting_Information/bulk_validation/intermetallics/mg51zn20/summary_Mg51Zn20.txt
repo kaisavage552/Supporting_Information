@@ -1,0 +1,26 @@
+Mg₅₁Zn₂₀ — orthorhombic, space group Immm (71) [experimental]
+Relaxed with Jang et al. 2NN MEAM potential (LAMMPS 23 Jun 2022 stable)
+
+Structure
+    142 atoms / primitive unit cell (experimental)
+    28.2 at.% Zn (most Mg-rich intermetallic in the series)
+
+Lattice parameters
+    a     = 14.394 Å   (exp 14.083 Å, +2.21%)
+    b     = 14.670 Å   (exp 14.486 Å, +1.27%)
+    c     = 14.241 Å   (exp 14.025 Å, +1.54%)
+
+Files:
+    inputs/   Mg51Zn20.cif          
+ (experimental structure with partial occupancies)
+              actual_mg51zn20.py    
+ (script assigning sites to majority species)
+              mg51zn20_supercell.data       
+ (3834-atom supercell, input to relaxation)
+              relax.in
+    outputs/  mg51zn20_relaxed.data
+              log_mg51zn20.lammps
+
+Phase lies entirely outside the original Jang fitting database. Experimental reference: Higashi et al. (1981), thesis ref [18]. The experimental Mg₅₁Zn₂₀ structure exhibits partial Mg/Zn site occupancies. Since classical potentials require fully determined atomic configurations, each partially occupied site was assigned to the species with the highest occupancy factor. To ensure adequate representation of all partially occupied site types, the assignment was performed on a 3×3×3 supercell (3834 atoms) rather than the primitive cell, following the treatment of §3.2.The discrete species assignment reduces the effective symmetry from the experimental Immm to Pm in the MEAM-relaxed structure. This symmetry reduction is a consequence of the assignment procedure rather than a physical feature of the phase, and is accounted for in downstream phonon calculations by using the appropriate monoclinic Brillouin zone path (§4.5.2).
+
+Supports: Table 4, Figure 2e, §3.2, §4.2. Downstream use in §4.3, §4.5.

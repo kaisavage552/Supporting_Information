@@ -1,0 +1,25 @@
+units           metal
+atom_style      atomic
+boundary        p p p
+
+read_data       mg2zn11_p1.data
+
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check yes
+
+# Box + atoms
+fix             1 all box/relax iso 0.0 vmax 0.001
+min_style       cg
+minimize        1e-14 1e-14 50000 50000
+unfix           1
+
+# Final atomic polish
+minimize        1e-14 1e-14 50000 50000
+
+thermo          50
+thermo_style    custom step pe etotal pxx pyy pzz vol lx ly lz
+
+write_data      mg2zn11_p1_relaxed.data

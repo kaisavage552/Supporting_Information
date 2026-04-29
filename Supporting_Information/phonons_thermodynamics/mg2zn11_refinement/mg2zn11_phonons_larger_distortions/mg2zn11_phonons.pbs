@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N mg2zn11_phonons
+#PBS -q v1_large72a
+#PBS -l select=1:ncpus=4:mem=4gb
+#PBS -l walltime=10:15:00
+#PBS -j oe
+#PBS -V
+
+cd $PBS_O_WORKDIR
+
+module load LAMMPS/2Aug2023_update2-foss-2023a-kokkos
+
+i=$(printf "%03d" $PBS_ARRAY_INDEX)
+echo "Running displacement $i ..."
+
+# Generate input file with unique dump filename to avoid collisions
+sed "s|phonon_supercells/supercell-001|phonon_supercells/supercell-$i|g; s|forces.dump|forces-$i.dump|g" mg2zn11_phonons_in.force > temp_$i.in
+
+# Run LAMMPS
+mpirun -np $NCPUS lmp -in temp_$i.in > log_$i.out

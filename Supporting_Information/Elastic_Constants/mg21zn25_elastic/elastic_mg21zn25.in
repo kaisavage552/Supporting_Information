@@ -1,0 +1,112 @@
+# Elastic constants for Mg21Zn25
+
+units           metal
+atom_style      atomic
+boundary        p p p
+
+read_data       mg21zn25_relaxed.data
+
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+
+# Re-relax with MEAM potential
+thermo          100
+thermo_style    custom step pe press pxx pyy pzz
+fix             1 all box/relax aniso 0.0 vmax 0.001
+minimize        1.0e-15 1.0e-15 100000 1000000
+unfix           1
+
+write_data      mg21zn25_rerelaxed.data
+
+print "Relaxation complete, computing elastic constants..."
+
+variable delta equal 0.005
+
+# Reference state
+run             0
+variable pxx0 equal pxx
+variable pyy0 equal pyy
+variable pzz0 equal pzz
+print "REF ${pxx0} ${pyy0} ${pzz0}" file stress_data.txt
+
+# Positive x-strain
+change_box      all x scale $(1.0+v_delta) remap
+run             0
+variable pxxp equal pxx
+variable pyyp equal pyy
+print "XPOS ${pxxp} ${pyyp}" append stress_data.txt
+
+# Negative x-strain
+clear
+units           metal
+atom_style      atomic
+boundary        p p p
+read_data       mg21zn25_rerelaxed.data
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+change_box      all x scale $(1.0-v_delta) remap
+run             0
+variable pxxm equal pxx
+variable pyym equal pyy
+print "XNEG ${pxxm} ${pyym}" append stress_data.txt
+
+# Positive z-strain
+clear
+units           metal
+atom_style      atomic
+boundary        p p p
+read_data       mg21zn25_rerelaxed.data
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+change_box      all z scale $(1.0+v_delta) remap
+run             0
+variable pzzp equal pzz
+variable pxxzp equal pxx
+print "ZPOS ${pzzp} ${pxxzp}" append stress_data.txt
+
+# Negative z-strain
+clear
+units           metal
+atom_style      atomic
+boundary        p p p
+read_data       mg21zn25_rerelaxed.data
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+change_box      all z scale $(1.0-v_delta) remap
+run             0
+variable pzzm equal pzz
+variable pxxzm equal pxx
+print "ZNEG ${pzzm} ${pxxzm}" append stress_data.txt
+
+# Positive yz shear
+clear
+units           metal
+atom_style      atomic
+boundary        p p p
+read_data       mg21zn25_rerelaxed.data
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+change_box      all triclinic
+variable lzval equal lz
+change_box      all yz delta $(v_delta*v_lzval) remap
+run             0
+variable pyzp equal pyz
+print "YZPOS ${pyzp}" append stress_data.txt
+
+# Negative yz shear
+clear
+units           metal
+atom_style      atomic
+boundary        p p p
+read_data       mg21zn25_rerelaxed.data
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+change_box      all triclinic
+variable lzval2 equal lz
+change_box      all yz delta $(-v_delta*v_lzval2) remap
+run             0
+variable pyzm equal pyz
+print "YZNEG ${pyzm}" append stress_data.txt
+
+print "Stress data saved to stress_data.txt"
+print "Run: python3 process_elastic.py to compute elastic constants"

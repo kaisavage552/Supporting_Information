@@ -1,0 +1,4 @@
+structure,parent_phase,n_Mg,n_Zn,atoms_per_cell,E_total_eV,deltaH_f_eV_per_atom
+ZnMg2,MgZn2,8,4,12,-11.907,0.404
+Zn2Mg11,Mg2Zn11,33,6,39,-33.4406,0.6212
+Zn4Mg7,Mg4Zn7,70,40,110,-150.9136,0.0104

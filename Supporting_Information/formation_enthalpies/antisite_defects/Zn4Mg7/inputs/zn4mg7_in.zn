@@ -1,0 +1,19 @@
+units           metal
+atom_style      atomic
+boundary        p p p
+
+read_data       zn4mg7.data
+
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Zn Mg
+
+neighbor        2.0 bin
+neigh_modify    delay 10 check yes
+
+thermo          50
+thermo_style    custom step pe etotal lx ly lz press
+
+min_style       cg
+minimize        1e-8 1e-8 10000 10000
+
+write_data      zn4mg7_relaxed.data

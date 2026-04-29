@@ -1,0 +1,32 @@
+units           metal
+atom_style      atomic
+boundary        p p p
+
+read_data       MgZn2_C11b.data   
+
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+
+neighbor        2.0 bin
+neigh_modify    delay 5 every 1 check yes
+
+thermo          50
+thermo_style    custom step pe etotal press lx ly lz
+
+reset_timestep  0
+min_style       cg
+
+minimize        1.0e-10 1.0e-10 5000 50000
+
+write_data      relaxed_atoms_only.data    # optional checkpoint
+
+
+fix             1 all box/relax iso 0.0 vmax 0.001
+
+min_style       cg
+minimize        1.0e-10 1.0e-10 10000 100000
+
+unfix           1
+
+write_data      MgZn2_C11b_relaxed_full.data
+write_restart   MgZn2_C11b_relaxed_full.restart

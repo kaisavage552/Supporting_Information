@@ -1,0 +1,104 @@
+LAMMPS (2 Aug 2023 - Update 2)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (5.335009 8.676757 33.700303)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  48 atoms
+  read_data CPU = 0.028 seconds
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 2 3 9
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 0
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+ (src/min.cpp:228)
+Per MPI rank memory allocation (min/avg/max) = 9.886 | 9.886 | 9.886 Mbytes
+   Step         PotEng         TotEng          Fmax          Press          Volume    
+         0  -61.077269     -61.077269      0.41006013    -789.63146      1560.0065    
+        10  -61.080187     -61.080187      0.41031737    -350.92357      1557.6804    
+        20  -61.082433     -61.082433      0.40981788     66.790577      1555.4811    
+        30  -61.084336     -61.084336      0.40770204     443.60385      1553.4981    
+        40  -61.088645     -61.088645      0.39629002     692.89931      1552.0844    
+        50  -61.144462     -61.144462      0.22680747     505.72287      1551.3019    
+        60  -61.158271     -61.158271      0.18446246     453.02676      1551.0872    
+        70  -61.167286     -61.167286      0.15813819     387.06099      1551.0923    
+        80  -61.173975     -61.173975      0.13981995     346.0729       1551.0464    
+        90  -61.182832     -61.182832      0.12091297     400.58628      1550.419     
+       100  -61.186309     -61.186309      0.11524191     379.27889      1550.3844    
+       110  -61.190186     -61.190186      0.108437       357.03479      1550.3338    
+       120  -61.20072      -61.20072       0.089493673    265.05532      1550.3245    
+       130  -61.203461     -61.203461      0.084947192    248.23058      1550.2764    
+       140  -61.210219     -61.210219      0.071960247    204.16245      1550.1418    
+       150  -61.212081     -61.212081      0.068460573    305.04922      1549.5214    
+       160  -61.213369     -61.213369      0.065437099    294.07061      1549.4983    
+       170  -61.214507     -61.214507      0.062651997    284.3875       1549.475     
+       180  -61.215568     -61.215568      0.059944927    274.83605      1549.4531    
+       190  -61.216604     -61.216604      0.057185847    264.92431      1549.4317    
+       200  -61.217682     -61.217682      0.05418408     253.89864      1549.4092    
+       210  -61.218966     -61.218966      0.050402363    239.58758      1549.3824    
+       220  -61.221552     -61.221552      0.041862856    198.62181      1549.363     
+       230  -61.222318     -61.222318      0.039063899    186.32319      1549.3477    
+       240  -61.222981     -61.222981      0.036496653    174.53766      1549.335     
+       250  -61.223623     -61.223623      0.033867289    161.94492      1549.323     
+       260  -61.224319     -61.224319      0.030809129    146.54597      1549.3106    
+       270  -61.225866     -61.225866      0.023515934    221.86087      1548.6821    
+       280  -61.226472     -61.226472      0.019851218    194.11298      1548.6948    
+       290  -61.227263     -61.227263      0.013961755    172.08647      1548.5877    
+       300  -61.227681     -61.227681      0.0096486097   95.965377      1548.8011    
+       310  -61.228079     -61.228079      0.0047616558   125.46116      1548.3648    
+       320  -61.228185     -61.228185      0.0033314005   95.372669      1548.3495    
+       321  -61.228185     -61.228185      0.0032806864   109.51649      1548.2755    
+Loop time of 0.173893 on 1 procs for 321 steps with 48 atoms
+
+99.7% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -61.0772687297481  -61.2281848745391  -61.2281854336772
+  Force two-norm initial, final = 2.7702231 0.019319794
+  Force max component initial, final = 2.320388 0.014779166
+  Final line search alpha, max atom move = 0.0079928261 0.00011812731
+  Iterations, force evaluations = 321 328
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.1712     | 0.1712     | 0.1712     |   0.0 | 98.45
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00055135 | 0.00055135 | 0.00055135 |   0.0 |  0.32
+Output  | 0.00012311 | 0.00012311 | 0.00012311 |   0.0 |  0.07
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.002021   |            |       |  1.16
+
+Nlocal:             48 ave          48 max          48 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            480 ave         480 max         480 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           2368 ave        2368 max        2368 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:         4736 ave        4736 max        4736 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 4736
+Ave neighs/atom = 98.666667
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00

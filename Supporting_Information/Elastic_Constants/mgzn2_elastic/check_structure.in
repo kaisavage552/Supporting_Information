@@ -1,0 +1,45 @@
+## Check that relaxed structure is at zero pressure
+
+units           metal
+atom_style      atomic
+dimension       3
+boundary        p p p
+
+# Read your relaxed structure
+read_data       mgzn2_relaxed.data
+
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+
+# Compute properties
+compute         pe all pe/atom
+compute         stress all stress/atom NULL
+
+thermo          1
+thermo_style    custom step temp press pe pxx pyy pzz pxy pxz pyz lx ly lz vol
+
+# Single point calculation
+run             0
+
+# Print summary
+variable        avgpress equal press
+variable        vol equal vol
+variable        natoms equal atoms
+
+print           ""
+print           "=========================================="
+print           "Structure Check Summary"
+print           "=========================================="
+print           "Number of atoms: ${natoms}"
+print           "Volume: ${vol} Å³"
+print           "Pressure: ${avgpress} bar"
+print           "Box dimensions:"
+print           "  lx = $(lx) Å"
+print           "  ly = $(ly) Å"
+print           "  lz = $(lz) Å"
+print           "=========================================="
+print           ""
+
+if              "${avgpress} > 100.0 || ${avgpress} < -100.0" then &
+                "print 'WARNING: Pressure not near zero! Re-run relaxation.'" &
+                "print 'Current pressure: ${avgpress} bar'"

@@ -1,0 +1,246 @@
+{
+  "Mg": {
+    "description": "Magnesium (hcp)",
+    "n_atoms": 2,
+    "composition": {
+      "Mg": 2
+    },
+    "formula_atoms": 1,
+    "n_formula_units": 2.0,
+    "E_initial": -3.012342850096991,
+    "E_initial_per_atom": -1.5061714250484954,
+    "E_final": -3.012342850096991,
+    "E_final_per_atom": -1.5061714250484954,
+    "E_per_formula": -1.5061714250484954,
+    "delta_E": 0.0,
+    "delta_E_per_atom": 0.0,
+    "opt_steps": 0,
+    "converged": true,
+    "cell_initial": {
+      "a": 3.2094,
+      "b": 3.2093999999999996,
+      "c": 5.2105,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00000000000001
+    },
+    "cell_final": {
+      "a": 3.2094,
+      "b": 3.2093999999999996,
+      "c": 5.2105,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00000000000001
+    }
+  },
+  "Zn": {
+    "description": "Zinc (hcp)",
+    "n_atoms": 2,
+    "composition": {
+      "Zn": 2
+    },
+    "formula_atoms": 1,
+    "n_formula_units": 2.0,
+    "E_initial": -2.2102661115813493,
+    "E_initial_per_atom": -1.1051330557906747,
+    "E_final": -2.2102661115813493,
+    "E_final_per_atom": -1.1051330557906747,
+    "E_per_formula": -1.1051330557906747,
+    "delta_E": 0.0,
+    "delta_E_per_atom": 0.0,
+    "opt_steps": 0,
+    "converged": true,
+    "cell_initial": {
+      "a": 2.6649,
+      "b": 2.6649,
+      "c": 4.9468,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00000000000001
+    },
+    "cell_final": {
+      "a": 2.6649,
+      "b": 2.6649,
+      "c": 4.9468,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 120.00000000000001
+    }
+  },
+  "MgO": {
+    "description": "Magnesium oxide (rocksalt)",
+    "n_atoms": 8,
+    "composition": {
+      "Mg": 4,
+      "O": 4
+    },
+    "formula_atoms": 2,
+    "n_formula_units": 4.0,
+    "E_initial": -47.45899499653578,
+    "E_initial_per_atom": -5.932374374566972,
+    "E_final": -47.45899499653578,
+    "E_final_per_atom": -5.932374374566972,
+    "E_per_formula": -11.864748749133945,
+    "delta_E": 0.0,
+    "delta_E_per_atom": 0.0,
+    "opt_steps": 0,
+    "converged": true,
+    "cell_initial": {
+      "a": 4.217,
+      "b": 4.217,
+      "c": 4.217,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 90.0
+    },
+    "cell_final": {
+      "a": 4.217,
+      "b": 4.217,
+      "c": 4.217,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 90.0
+    }
+  },
+  "ZnO": {
+    "description": "Zinc oxide (wurtzite)",
+    "n_atoms": 4,
+    "composition": {
+      "Zn": 2,
+      "O": 2
+    },
+    "formula_atoms": 2,
+    "n_formula_units": 2.0,
+    "E_initial": -17.827385875566925,
+    "E_initial_per_atom": -4.456846468891731,
+    "E_final": -17.827608274655823,
+    "E_final_per_atom": -4.456902068663956,
+    "E_per_formula": -8.913804137327912,
+    "delta_E": -0.0002223990888978733,
+    "delta_E_per_atom": -5.5599772224468325e-05,
+    "opt_steps": 2,
+    "converged": true,
+    "cell_initial": {
+      "a": 3.2494,
+      "b": 3.2494,
+      "c": 5.2054,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 119.99999999999999
+    },
+    "cell_final": {
+      "a": 3.2494,
+      "b": 3.2494,
+      "c": 5.2054,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 119.99999999999999
+    }
+  },
+  "Mg(OH)2": {
+    "description": "Magnesium hydroxide (brucite)",
+    "n_atoms": 5,
+    "composition": {
+      "Mg": 1,
+      "O": 2,
+      "H": 2
+    },
+    "formula_atoms": 5,
+    "n_formula_units": 1.0,
+    "E_initial": -26.80374083913602,
+    "E_initial_per_atom": -5.360748167827204,
+    "E_final": -26.831830074540783,
+    "E_final_per_atom": -5.366366014908157,
+    "E_per_formula": -26.831830074540783,
+    "delta_E": -0.028089235404763713,
+    "delta_E_per_atom": -0.005617847080952742,
+    "opt_steps": 5,
+    "converged": true,
+    "cell_initial": {
+      "a": 3.142,
+      "b": 3.1419999999999995,
+      "c": 4.766,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 119.99999999999999
+    },
+    "cell_final": {
+      "a": 3.142,
+      "b": 3.1419999999999995,
+      "c": 4.766,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 119.99999999999999
+    }
+  },
+  "Zn(OH)2": {
+    "description": "Zinc hydroxide (wulfingite)",
+    "n_atoms": 12,
+    "composition": {
+      "Zn": 4,
+      "O": 8
+    },
+    "formula_atoms": 5,
+    "n_formula_units": 2.4,
+    "E_initial": -39.73060881488916,
+    "E_initial_per_atom": -3.31088406790743,
+    "E_final": -49.45608590863111,
+    "E_final_per_atom": -4.121340492385926,
+    "E_per_formula": -20.60670246192963,
+    "delta_E": -9.72547709374195,
+    "delta_E_per_atom": -0.8104564244784959,
+    "opt_steps": 55,
+    "converged": true,
+    "cell_initial": {
+      "a": 5.16,
+      "b": 8.53,
+      "c": 4.92,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 90.0
+    },
+    "cell_final": {
+      "a": 5.16,
+      "b": 8.53,
+      "c": 4.92,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 90.0
+    }
+  },
+  "MgH2": {
+    "description": "Magnesium hydride (rutile)",
+    "n_atoms": 6,
+    "composition": {
+      "H": 4,
+      "Mg": 2
+    },
+    "formula_atoms": 3,
+    "n_formula_units": 2.0,
+    "E_initial": -17.517048544837706,
+    "E_initial_per_atom": -2.9195080908062843,
+    "E_final": -17.518167503879738,
+    "E_final_per_atom": -2.919694583979956,
+    "E_per_formula": -8.759083751939869,
+    "delta_E": -0.0011189590420315199,
+    "delta_E_per_atom": -0.00018649317367191998,
+    "opt_steps": 2,
+    "converged": true,
+    "cell_initial": {
+      "a": 4.5168,
+      "b": 4.5168,
+      "c": 3.0205,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 90.0
+    },
+    "cell_final": {
+      "a": 4.5168,
+      "b": 4.5168,
+      "c": 3.0205,
+      "alpha": 90.0,
+      "beta": 90.0,
+      "gamma": 90.0
+    }
+  }
+}

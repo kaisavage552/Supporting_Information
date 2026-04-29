@@ -1,0 +1,842 @@
+
+The following have been reloaded with a version change:
+  1) GCCcore/12.2.0 => GCCcore/12.3.0
+  2) Python/3.10.8-GCCcore-12.2.0-bare => Python/3.11.3-GCCcore-12.3.0
+  3) SQLite/3.39.4-GCCcore-12.2.0 => SQLite/3.42.0-GCCcore-12.3.0
+  4) Tcl/8.6.12-GCCcore-12.2.0 => Tcl/8.6.13-GCCcore-12.3.0
+  5) XZ/5.2.7-GCCcore-12.2.0 => XZ/5.4.2-GCCcore-12.3.0
+  6) binutils/2.39-GCCcore-12.2.0 => binutils/2.40-GCCcore-12.3.0
+  7) bzip2/1.0.8-GCCcore-12.2.0 => bzip2/1.0.8-GCCcore-12.3.0
+  8) libffi/3.4.4-GCCcore-12.2.0 => libffi/3.4.4-GCCcore-12.3.0
+  9) libreadline/8.2-GCCcore-12.2.0 => libreadline/8.2-GCCcore-12.3.0
+ 10) ncurses/6.3-GCCcore-12.2.0 => ncurses/6.4-GCCcore-12.3.0
+ 11) zlib/1.2.12-GCCcore-12.2.0 => zlib/1.2.13-GCCcore-12.3.0
+
+Running displacement 001 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.026 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663     -0.2080369    
+Loop time of 8.2e-07 on 1 procs for 0 steps with 1053 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 8.2e-07    |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 002 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.022 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663      0.38310678   
+Loop time of 1e-06 on 1 procs for 0 steps with 1053 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1e-06      |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 003 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.058 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663      0.24969771   
+Loop time of 1.26e-06 on 1 procs for 0 steps with 1053 atoms
+
+79.4% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.26e-06   |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 004 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.041 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663     -0.10385801   
+Loop time of 1.31e-06 on 1 procs for 0 steps with 1053 atoms
+
+152.7% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.31e-06   |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 005 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.028 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663      0.091894559  
+Loop time of 1.13e-06 on 1 procs for 0 steps with 1053 atoms
+
+88.5% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.13e-06   |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 006 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.073 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663     -0.017956062  
+Loop time of 8.7e-07 on 1 procs for 0 steps with 1053 atoms
+
+114.9% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 8.7e-07    |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 007 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.021 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663     -0.10670177   
+Loop time of 1.16e-06 on 1 procs for 0 steps with 1053 atoms
+
+86.2% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.16e-06   |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 008 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.031 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8663      0             -1234.8663      0.23593165   
+Loop time of 7.6e-07 on 1 procs for 0 steps with 1053 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 7.6e-07    |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 009 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.021 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8662      0             -1234.8662      0.86193877   
+Loop time of 6.09e-07 on 1 procs for 0 steps with 1053 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 6.09e-07   |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 010 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.020 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8662      0             -1234.8662     -0.67089129   
+Loop time of 5.9e-07 on 1 procs for 0 steps with 1053 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 5.9e-07    |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 011 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.023 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8662      0             -1234.8662      0.21392434   
+Loop time of 1.38e-06 on 1 procs for 0 steps with 1053 atoms
+
+72.5% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.38e-06   |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 012 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.028 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.8662      0             -1234.8662     -0.037924209  
+Loop time of 6.9e-07 on 1 procs for 0 steps with 1053 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 6.9e-07    |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+Running displacement 013 ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (26.131473 26.131474 26.131474) with tilt (1.6000913e-15 1.6000913e-15 2.9011764e-15)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  1053 atoms
+  read_data CPU = 0.024 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 7 7 7
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 11.31 | 11.31 | 11.31 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -1234.866       0             -1234.866       0.15315004   
+Loop time of 6.1e-07 on 1 procs for 0 steps with 1053 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 6.1e-07    |            |       |100.00
+
+Nlocal:           1053 ave        1053 max        1053 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3252 ave        3252 max        3252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          68202 ave       68202 max       68202 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:       136404 ave      136404 max      136404 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 136404
+Ave neighs/atom = 129.53846
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+
+====================================
+CPU Time used: 00:00:00
+CPU Percent: 0%
+Memory usage: 0b
+Approx Power usage: 0.0
+Walltime usage: 00:00:45
+
+====================================

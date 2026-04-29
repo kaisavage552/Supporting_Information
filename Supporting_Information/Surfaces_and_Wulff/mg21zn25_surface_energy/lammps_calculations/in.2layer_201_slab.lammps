@@ -1,0 +1,15 @@
+# MgZn2 slab single point energy
+
+units metal
+atom_style atomic
+boundary p p f
+
+read_data slabs/mg21zn25_201_2layers_reconstructed_ase.data
+
+pair_style meam
+pair_coeff * * library.meam Mg Zn ZnMg.meam Zn Mg
+
+thermo 1
+thermo_style custom step pe etotal press vol
+
+run 0

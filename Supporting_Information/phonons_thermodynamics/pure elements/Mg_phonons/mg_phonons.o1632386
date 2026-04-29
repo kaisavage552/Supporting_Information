@@ -1,0 +1,88 @@
+
+The following have been reloaded with a version change:
+  1) GCCcore/12.2.0 => GCCcore/12.3.0
+  2) Python/3.10.8-GCCcore-12.2.0-bare => Python/3.11.3-GCCcore-12.3.0
+  3) SQLite/3.39.4-GCCcore-12.2.0 => SQLite/3.42.0-GCCcore-12.3.0
+  4) Tcl/8.6.12-GCCcore-12.2.0 => Tcl/8.6.13-GCCcore-12.3.0
+  5) XZ/5.2.7-GCCcore-12.2.0 => XZ/5.4.2-GCCcore-12.3.0
+  6) binutils/2.39-GCCcore-12.2.0 => binutils/2.40-GCCcore-12.3.0
+  7) bzip2/1.0.8-GCCcore-12.2.0 => bzip2/1.0.8-GCCcore-12.3.0
+  8) libffi/3.4.4-GCCcore-12.2.0 => libffi/3.4.4-GCCcore-12.3.0
+  9) libreadline/8.2-GCCcore-12.2.0 => libreadline/8.2-GCCcore-12.3.0
+ 10) ncurses/6.3-GCCcore-12.2.0 => ncurses/6.4-GCCcore-12.3.0
+ 11) zlib/1.2.12-GCCcore-12.2.0 => zlib/1.2.13-GCCcore-12.3.0
+
+Running single supercell calculation ...
+LAMMPS (2 Aug 2023 - Update 2)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  triclinic box = (0 0 0) to (9.627195 8.3373954 15.590732) with tilt (-4.8135975 9.5465698e-16 0)
+WARNING: Triclinic box skew is large. LAMMPS will run inefficiently. (src/domain.cpp:220)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading atoms ...
+  54 atoms
+  read_data CPU = 0.007 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 4 3 4
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 8.863 | 8.863 | 8.863 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -83.664372      0             -83.664372      0.47075106   
+Loop time of 8.1e-07 on 1 procs for 0 steps with 54 atoms
+
+246.9% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 8.1e-07    |            |       |100.00
+
+Nlocal:             54 ave          54 max          54 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            897 ave         897 max         897 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           2322 ave        2322 max        2322 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:         4644 ave        4644 max        4644 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 4644
+Ave neighs/atom = 86
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+mv: cannot stat 'forces.dump': No such file or directory
+
+====================================
+CPU Time used: 00:00:00
+CPU Percent: 0%
+Memory usage: 0b
+Approx Power usage: 0.0
+Walltime usage: 00:00:17
+
+====================================

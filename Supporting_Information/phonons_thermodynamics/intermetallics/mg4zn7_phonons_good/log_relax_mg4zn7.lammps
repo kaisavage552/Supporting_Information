@@ -1,0 +1,102 @@
+LAMMPS (2 Aug 2023 - Update 2)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+units           metal
+atom_style      atomic
+boundary        p p p
+
+read_data       mg4zn7.data
+Reading data file ...
+  triclinic box = (0 0 0) to (25.96 5.24 13.941507) with tilt (0 -3.0907577 0)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  110 atoms
+  read_data CPU = 0.045 seconds
+
+
+pair_style      meam/c
+pair_coeff      * * library.meam Zn Mg ZnMg.meam Mg Zn
+
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check yes
+
+
+# Hexagonal MgZn2 (C14) → allow anisotropic stress relaxation
+fix             relax all box/relax aniso 0.0 vmax 0.001
+
+min_style       cg
+min_modify      line quadratic dmax 0.1
+
+# Very tight tolerances for phonon-quality relaxation
+minimize        1e-12 1e-12 20000 20000
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 8
+  ghost atom cutoff = 8
+  binsize = 4, bins = 8 2 4
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair meam/c, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair meam/c, perpetual, half/full from (1)
+      attributes: half, newton on
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+WARNING: Energy due to 3 extra global DOFs will be included in minimizer energies
+ (src/min.cpp:228)
+Per MPI rank memory allocation (min/avg/max) = 10.26 | 10.26 | 10.26 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press          Volume    
+         0   0             -146.58496      0             -146.58496      36173.492      1896.4688    
+       104   0             -149.45698      0             -149.45698     -53.285073      1984.2789    
+Loop time of 0.239731 on 1 procs for 104 steps with 110 atoms
+
+99.6% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+      -146.58496106006  -149.456982838661  -149.456982838661
+  Force two-norm initial, final = 74.434093 0.2428515
+  Force max component initial, final = 44.434126 0.10106589
+  Final line search alpha, max atom move = 1.5259114e-07 1.5421759e-08
+  Iterations, force evaluations = 104 149
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.23689    | 0.23689    | 0.23689    |   0.0 | 98.81
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00074807 | 0.00074807 | 0.00074807 |   0.0 |  0.31
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.002094   |            |       |  0.87
+
+Nlocal:            110 ave         110 max         110 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           1587 ave        1587 max        1587 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           7000 ave        7000 max        7000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:        14000 ave       14000 max       14000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 14000
+Ave neighs/atom = 127.27273
+Neighbor list builds = 0
+Dangerous builds = 0
+
+
+thermo          50
+thermo_style    custom step pe etotal pxx pyy pzz vol lx ly lz
+
+write_data      mg2zn11_relaxed.data
+System init for write_data ...
+write_restart   mg2zn11_relaxed.restart
+System init for write_restart ...
+
+Total wall time: 0:00:00

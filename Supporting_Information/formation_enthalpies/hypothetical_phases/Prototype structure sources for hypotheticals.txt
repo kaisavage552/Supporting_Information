@@ -1,0 +1,47 @@
+Prototype structure sources for hypothetical Mg-Zn phases
+
+Three hypothetical structures were constructed at compositions where they do
+not appear in the experimental Mg-Zn phase diagram. In each case, a prototype
+CIF was taken from the SpringerMaterials / Pauling File crystallographic
+database and modified by element substitution to produce the starting geometry
+for subsequent relaxation with the Jang 2NN MEAM potential.
+
+See thesis Section 3.4 and Table 8.
+
+
+MgZn (B2, CsCl-type, Pm-3m)
+Source prototype:   CsCl
+Database:           SpringerMaterials / Pauling File
+LPF / SM ID:        SD0305323 (sm_isp_sd_0305323)
+Reference:          Arkhipov, Kashina, Kuzina,
+                    Zhurnal Neorganicheskoi Khimii 15 (1970) 840.
+File:               CsCl_b2_structure.cif
+Construction:       Cs -> Mg, Cl -> Zn element substitution.
+                    Two-atom Pm-3m cell: Mg on (0,0,0), Zn on (1/2,1/2,1/2).
+
+
+MgZn2 (C11b, MoSi2-type, I4/mmm)
+Source prototype:   MoSi2 (high-temperature C11b polymorph)
+Database:           SpringerMaterials / Pauling File
+LPF / SM ID:        SD0457576 (sm_isp_sd_0457576)
+Reference:          Svechnikov, Kocherzhinskii, Yupko,
+                    Soviet Physics Doklady 13 (1969) 1072.
+File:               MoSi2_C11b.cif
+Construction:       Mo -> Mg, Si -> Zn element substitution.
+                    1 Mo site -> Mg; 2 Si sites -> 2 Zn; stoichiometry Mg:Zn = 1:2.
+
+
+Mg2Zn (C11b, MoSi2-type, I4/mmm)
+Source prototype:   MoSi2 (high-temperature C11b polymorph)
+Database:           SpringerMaterials / Pauling File
+LPF / SM ID:        SD0457576 (sm_isp_sd_0457576)
+Reference:          Svechnikov, Kocherzhinskii, Yupko,
+                    Soviet Physics Doklady 13 (1969) 1072.
+File:               MoSi2_C11b.cif
+Construction:       Mo -> Zn, Si -> Mg element substitution.
+                    1 Mo site -> Zn; 2 Si sites -> 2 Mg; stoichiometry Mg:Zn = 2:1.
+
+
+All three derived structures were fully relaxed (four-stage conjugate gradient
+protocol, Section 3.3) prior to energy evaluation. Resulting formation
+enthalpies are reported in Table 8 and in results_hypothetical.csv.

@@ -1,0 +1,4 @@
+structure,prototype,n_Mg,n_Zn,atoms_per_cell,E_total_eV,deltaH_f_eV_per_atom
+MgZn_B2,"CsCl-type, Pm-3m",1,1,2,-2.6035,0.018
+MgZn2_C11b,"MoSi2-type, I4/mmm",2,4,6,-5.6334,0.3043
+Mg2Zn_C11b,"MoSi2-type, I4/mmm",4,2,6,-4.2471,0.6884

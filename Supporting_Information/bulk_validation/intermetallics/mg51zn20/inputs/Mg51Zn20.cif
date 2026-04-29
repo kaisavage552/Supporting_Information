@@ -1,0 +1,121 @@
+
+#(C) 2025 by FIZ Karlsruhe - Leibniz Institute for Information Infrastructure.  All rights reserved.
+data_104901-ICSD
+_database_code_ICSD 104901
+_audit_creation_date 2004-10-01
+_chemical_name_common 'Magnesium zinc (51.04/19.8)'
+_chemical_formula_structural 'Mg51.04 Zn19.8'
+_chemical_formula_sum 'Mg51.04 Zn19.8'
+_exptl_crystal_density_diffrn 2.94
+_citation_title 'The crystal structure of Mg51 Zn20'
+loop_
+_citation_id
+_citation_journal_full
+_citation_year
+_citation_journal_volume
+_citation_page_first
+_citation_page_last
+_citation_journal_id_ASTM
+primary 'Journal of Solid State Chemistry' 1981 36 225 233 JSSCBI
+loop_
+_citation_author_citation_id
+_citation_author_name
+primary 'Higashi, I.'
+primary 'Shiotani, N.'
+primary 'Uda, M.'
+primary 'Mizoguchi, T.'
+primary 'Katoh, H.'
+_cell_length_a 14.083(3)
+_cell_length_b 14.486(3)
+_cell_length_c 14.025(3)
+_cell_angle_alpha 90.
+_cell_angle_beta 90.
+_cell_angle_gamma 90.
+_cell_volume 2861.19
+_cell_formula_units_Z 2
+_space_group_name_H-M_alt 'I m m m'
+_space_group_IT_number 71
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 'x, y, -z'
+2 'x, -y, z'
+3 '-x, y, z'
+4 '-x, -y, -z'
+5 '-x, -y, z'
+6 '-x, y, -z'
+7 'x, -y, -z'
+8 'x, y, z'
+9 'x+1/2, y+1/2, -z+1/2'
+10 'x+1/2, -y+1/2, z+1/2'
+11 '-x+1/2, y+1/2, z+1/2'
+12 '-x+1/2, -y+1/2, -z+1/2'
+13 '-x+1/2, -y+1/2, z+1/2'
+14 '-x+1/2, y+1/2, -z+1/2'
+15 'x+1/2, -y+1/2, -z+1/2'
+16 'x+1/2, y+1/2, z+1/2'
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Mg0+ 0
+Zn0+ 0
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_B_iso_or_equiv
+_atom_site_occupancy
+Mg1 Mg0+ 4 e 0.6148(6) 0 0 1.5 1.
+Mg2 Mg0+ 4 g 0 0.3521(6) 0 1.5 1.
+Mg3 Mg0+ 4 i 0 0 0.3848(6) 1.5 1.
+Mg4 Mg0+ 8 l 0 0.3463(6) 0.4011(6) 0.2 0.52(2)
+Mg5 Mg0+ 8 l 0 0.1687(5) 0.1095(5) 1.4 0.74(2)
+Mg6 Mg0+ 8 m 0.1068(3) 0 0.1731(3) 1.1 1.
+Mg7 Mg0+ 8 m 0.6097(4) 0 0.6193(4) 1.7 1.
+Mg8 Mg0+ 8 n 0.1803(3) 0.1029(3) 0 0.5 1.
+Mg9 Mg0+ 8 n 0.6830(4) 0.5975(3) 0 1.1 1.
+Mg10 Mg0+ 16 o 0.1116(3) 0.1812(2) 0.3065(3) 1.5 1.
+Mg11 Mg0+ 16 o 0.1815(3) 0.2846(2) 0.1177(3) 1.8 1.
+Mg12 Mg0+ 16 o 0.1926(3) 0.3914(2) 0.3114(3) 1.5 1.
+Zn1 Zn0+ 2 a 0 0 0 1.2 1.
+Zn2 Zn0+ 4 h 0 0.1729(2) 0.5 1.6 1.
+Zn3 Zn0+ 4 j 0.5 0 0.8051(2) 2.1 1.
+Zn4 Zn0+ 8 l 0 0.3389(1) 0.2066(1) 1.5 1.
+Zn5 Zn0+ 8 l 0 0.3355(3) 0.4002(3) 1.6 0.46(2)
+Zn6 Zn0+ 8 l 0 0.1698(5) 0.1096(5) 1.2 0.24(2)
+Zn7 Zn0+ 8 m 0.2055(1) 0 0.3323(1) 1.7 1.
+Zn8 Zn0+ 8 n 0.6621(1) 0.7869(1) 0 1.4 1.
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_type_symbol
+_atom_site_aniso_beta_11
+_atom_site_aniso_beta_22
+_atom_site_aniso_beta_33
+_atom_site_aniso_beta_12
+_atom_site_aniso_beta_13
+_atom_site_aniso_beta_23
+Mg1 Mg0+ 0.0020(4) 0.0017(3) 0.0017(4) 0 0 0
+Mg2 Mg0+ 0.0018(4) 0.0019(4) 0.0020(4) 0 0 0
+Mg3 Mg0+ 0.0017(4) 0.0018(3) 0.0020(4) 0 0 0
+Mg4 Mg0+ 0.0002(4) 0.0004(4) 0.0005(4) 0 0 -0.0001(3)
+Mg5 Mg0+ 0.0022(3) 0.0013(3) 0.0016(3) 0 0 -0.0002(3)
+Mg6 Mg0+ 0.0008(2) 0.0021(2) 0.0010(2) 0 0.0005(2) 0
+Mg7 Mg0+ 0.0017(3) 0.0019(2) 0.0027(3) 0 0.0006(2) 0
+Mg8 Mg0+ 0.0007(2) 0.0007(2) 0.0006(2) -0.0005(2) 0 0
+Mg9 Mg0+ 0.0036(3) 0.0003(2) 0.0003(2) -0.0002(2) 0 0
+Mg10 Mg0+ 0.0022(2) 0.0014(1) 0.0019(2) -0.0002(1) 0.0000(2) -0.0002(2)
+Mg11 Mg0+ 0.0021(2) 0.0028(2) 0.0018(2) 0.0002(2) 0.0003(2) -0.0001(2)
+Mg12 Mg0+ 0.0022(2) 0.0016(1) 0.0019(2) 0.0001(1) -0.0001(2) 0.0002(2)
+Zn1 Zn0+ 0.0019(2) 0.0015(2) 0.0011(2) 0 0 0
+Zn2 Zn0+ 0.0023(1) 0.0016(1) 0.0021(1) 0 0 0
+Zn3 Zn0+ 0.0033(2) 0.0018(1) 0.0028(2) 0 0 0
+Zn4 Zn0+ 0.0021(1) 0.0018(1) 0.0016(1) 0 0 -0.0002(1)
+Zn5 Zn0+ 0.0026(2) 0.0016(2) 0.0018(2) 0 0 0.0003(2)
+Zn6 Zn0+ 0.0016(3) 0.0019(3) 0.0019(4) 0 0 -0.0003(3)
+Zn7 Zn0+ 0.0017(1) 0.0032(1) 0.0012(1) 0 0.0(0) 0
+Zn8 Zn0+ 0.0015(1) 0.0016(1) 0.0022(1) 0.0(0) 0 0
+#End of TTdata_104901-ICSD

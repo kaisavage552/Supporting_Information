@@ -1,0 +1,26 @@
+{
+  "H2O_geometry": {
+    "O-H_bond_initial": 0.9572,
+    "O-H_bond_final": 0.9716413801780349,
+    "angle_initial": 104.5,
+    "angle_final": 104.56760033573319
+  },
+  "energies": {
+    "E_H2O": -14.228747812855058,
+    "E_H2": -6.766273493453458,
+    "E_O2": -9.896587579017208
+  },
+  "formation_enthalpy": {
+    "DH_mace": -2.5141805298929967,
+    "DH_exp": -2.506,
+    "error_eV": -0.00818052989299689,
+    "error_percent": 0.3264377451315692
+  },
+  "error_analysis": {
+    "O2_error": -4.776587579017208,
+    "H2_error": -2.246273493453458,
+    "expected_error": -4.634567282962061,
+    "actual_error": -0.00818052989299689,
+    "H2O_intrinsic_error": 4.626386753069065
+  }
+}
